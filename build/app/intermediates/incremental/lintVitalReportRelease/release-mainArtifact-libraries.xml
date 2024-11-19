@@ -1,13 +1,13 @@
 <libraries>
   <library
-      name="__local_aars__:C:\Users\Aaron\Downloads\projectos flutter\flutter_application_1\actividad1\build\app\intermediates\flutter\release\libs.jar:unspecified@jar"
-      jars="C:\Users\Aaron\Downloads\projectos flutter\flutter_application_1\actividad1\build\app\intermediates\flutter\release\libs.jar"
-      resolved="__local_aars__:C:\Users\Aaron\Downloads\projectos flutter\flutter_application_1\actividad1\build\app\intermediates\flutter\release\libs.jar:unspecified"/>
+      name="__local_aars__:C:\Users\Aaron\Downloads\NuevoRepositorio\build\app\intermediates\flutter\release\libs.jar:unspecified@jar"
+      jars="C:\Users\Aaron\Downloads\NuevoRepositorio\build\app\intermediates\flutter\release\libs.jar"
+      resolved="__local_aars__:C:\Users\Aaron\Downloads\NuevoRepositorio\build\app\intermediates\flutter\release\libs.jar:unspecified"/>
   <library
-      name="C:\Users\Aaron\Downloads\projectos flutter\flutter_application_1\actividad1\android@@:path_provider_android::release"
-      jars="C:\Users\Aaron\Downloads\projectos flutter\flutter_application_1\actividad1\build\path_provider_android\.transforms\d24067b89347c57e9cfc9d820b2211a1\transformed\out\jars\classes.jar;C:\Users\Aaron\Downloads\projectos flutter\flutter_application_1\actividad1\build\path_provider_android\.transforms\d24067b89347c57e9cfc9d820b2211a1\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Aaron\Downloads\NuevoRepositorio\android@@:path_provider_android::release"
+      jars="C:\Users\Aaron\Downloads\NuevoRepositorio\build\path_provider_android\.transforms\751996ecd64eb62b9b1f017f43b36163\transformed\out\jars\classes.jar;C:\Users\Aaron\Downloads\NuevoRepositorio\build\path_provider_android\.transforms\751996ecd64eb62b9b1f017f43b36163\transformed\out\jars\libs\R.jar"
       resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"
-      folder="C:\Users\Aaron\Downloads\projectos flutter\flutter_application_1\actividad1\build\path_provider_android\.transforms\d24067b89347c57e9cfc9d820b2211a1\transformed\out"
+      folder="C:\Users\Aaron\Downloads\NuevoRepositorio\build\path_provider_android\.transforms\751996ecd64eb62b9b1f017f43b36163\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
