@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'MenuLateral.dart';
+import 'package:actividad1/Screens/menu_lateral.dart';
 
+// ignore: camel_case_types
 class enlace3 extends StatelessWidget {
   const enlace3({super.key});
 
@@ -10,8 +11,8 @@ class enlace3 extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Ejemplo de Íconos'),
       ),
-      drawer: menulateral(), 
-      body: Center(
+      drawer: const MenuLateral(), 
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center, 
           children: [

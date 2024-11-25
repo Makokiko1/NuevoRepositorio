@@ -1,8 +1,5 @@
-import 'menuLateral.dart';
+import 'package:actividad1/Screens/menu_lateral.dart';
 import 'package:flutter/material.dart';
-
-
-
 
 class Instagram extends StatelessWidget {
   const Instagram({super.key});
@@ -16,17 +13,17 @@ class Instagram extends StatelessWidget {
           style: TextStyle(fontSize: 30),
         ),
       ),
-      drawer: const menulateral(),
+      drawer: const MenuLateral(),
       body: const ProfileScreen(),
     );
   }
 }
 
-
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ProfileScreenState createState() => _ProfileScreenState();
 }
 
@@ -151,60 +148,62 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
               const SizedBox(height: 20), 
-              // Fila de imágenes circulares (Historias)
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                      ),
-                      SizedBox(height: 8), 
-                      Text('Nueva'), 
+              // Barra desplazable de historias
+              const SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 30,
+                        ),
+                        SizedBox(height: 8), 
+                        Text('Nueva'), 
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 30,
+                          backgroundImage: AssetImage('assets/images/deporte.jpg'),
+                        ),
+                        SizedBox(height: 8),
+                        Text('Deporte'), 
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 30,
+                          backgroundImage: AssetImage('assets/images/Colegas.jpg'),
+                        ),
+                        SizedBox(height: 8),
+                        Text('Sabios'), 
                     ],
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundImage: AssetImage('assets/images/deporte.jpg'),
-                      ),
-                      SizedBox(height: 8),
-                      Text('Deporte'), 
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundImage: AssetImage('assets/images/Colegas.jpg'),
-                      ),
-                      SizedBox(height: 8),
-                      Text('Sabios'), 
-                                          ],
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundImage: AssetImage('assets/images/Vecinos.jpg'),
-                      ),
-                      SizedBox(height: 8), 
-                      Text('Vecinos'), 
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundImage: AssetImage('assets/images/yo.jpg'),
-                      ),
-                      SizedBox(height: 8), 
-                      Text('Yo'), 
-                    ],
-                  ),
-                ],
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 30,
+                          backgroundImage: AssetImage('assets/images/Vecinos.jpg'),
+                        ),
+                        SizedBox(height: 8), 
+                        Text('Vecinos'), 
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 30,
+                          backgroundImage: AssetImage('assets/images/yo.jpg'),
+                        ),
+                        SizedBox(height: 8), 
+                        Text('Yo'), 
+                      ],
+                    ),
+                  ],
+                ),
               ),
               const SizedBox(height: 20), 
               // Línea gris debajo de las historias

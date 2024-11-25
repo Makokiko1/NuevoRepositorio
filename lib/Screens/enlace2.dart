@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'MenuLateral.dart';
+import 'package:actividad1/Screens/menu_lateral.dart';
 
+// ignore: camel_case_types
 class enlace2 extends StatelessWidget {
   const enlace2({super.key});
 
@@ -10,7 +11,7 @@ class enlace2 extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Segunda pantalla"),
       ),
-      drawer: const menulateral(),
+      drawer: const MenuLateral(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
