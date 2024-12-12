@@ -43,6 +43,8 @@ class MenuLateral extends StatelessWidget {
           _buildMenuItem(context, 'Disposición Pantalla', '/disposicionPantalla'),
           _buildMenuItem(context, 'Contador de Clics', '/contadorClics'),
           _buildMenuItem(context, 'Imagenes randoms', '/randomColors'),
+          _buildMenuItem(context, 'Formulario Personalizado', '/formulario_personalizado'),
+          _buildMenuItem(context, 'Adivina numero', '/adivina_numero'),
           _buildMenuItem(context, 'Volver al Inicio', '/', isLast: true),
           
 
@@ -68,16 +70,14 @@ class MenuLateral extends StatelessWidget {
               color: Colors.lightBlue[100], // Azul claro para el texto
             ),
           ),
-          onTap: () {
-            // Si la ruta es la principal ('/'), se regresa a la pantalla de inicio
-            if (route == '/') {
-              // Aquí usamos popUntil para regresar directamente a la pantalla principal
-              Navigator.popUntil(context, ModalRoute.withName('/'));
-            } else {
-              // Navega a la página correspondiente
-              Navigator.pushNamed(context, route);
-            }
-          },
+            onTap: () {
+      if (route == '/') {
+        Navigator.popUntil(context, ModalRoute.withName('/'));
+      } else {
+        Navigator.pushReplacementNamed(context, route);  // Usa pushReplacementNamed en lugar de pushNamed
+      }
+    }
+    ,
         ),
       ),
     );
